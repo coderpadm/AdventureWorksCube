@@ -1,0 +1,157 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="0cde6c17-93d8-4aee-aedd-4de047d1cc9d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DimReseller</ID>
+  <Name>DimReseller</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="a1d66580-0cbd-4ff8-b8f3-90b62e9dd7fa">
+    <DataSourceViewID>AdventureWorks DM View</DataSourceViewID>
+  </Source>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="c925e79d-b140-4ff8-b511-fefab3150996">
+      <ID>DimReseller</ID>
+      <Name>DimReseller</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c9505e2a-53e7-4bda-9534-5e6f828febec">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9dbf66b5-79da-4ec5-8002-f5b98e4d68c8">
+            <TableID>DimReseller</TableID>
+            <ColumnID>DimReseller</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="91dc5a66-8a35-4674-b219-c3528e51641a">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9eb6a68a-4ef1-4840-bc10-0cb3d37fadc1">
+          <TableID>DimReseller</TableID>
+          <ColumnID>DimReseller_Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="80406024-850c-4b52-9d77-b040c66fe565">
+          <AttributeID>DimReseller SCD Original ID</AttributeID>
+          <Name>DimReseller SCD Original ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a5e45327-d4e5-4ac2-a1b5-85bfec904d56">
+          <AttributeID>DimReseller SCD Status</AttributeID>
+          <Name>DimReseller SCD Status</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d156df32-9369-400e-97a7-ba4592c675dd">
+          <AttributeID>DimReseller SCD Start Date</AttributeID>
+          <Name>DimReseller SCD Start Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="38fc0d9c-282b-48fa-b2a3-4014b256e3c9">
+          <AttributeID>DimReseller SCD End Date</AttributeID>
+          <Name>DimReseller SCD End Date</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cb059bca-48a9-4d4a-9961-ea80b7118d02">
+      <ID>DimReseller SCD Original ID</ID>
+      <Name>DimReseller SCD Original ID</Name>
+      <Type>ScdOriginalID</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8b4ae52d-9c95-470e-b43e-d5207618b9b6">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="680597d1-885c-42d7-aff0-d6f1014f3207">
+            <TableID>DimReseller</TableID>
+            <ColumnID>DimReseller_SCD_Original_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9f6d8553-7128-471f-9bf8-4a06075f7c3d">
+      <ID>DimReseller SCD Status</ID>
+      <Name>DimReseller SCD Status</Name>
+      <Type>ScdStatus</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d0ee0d9a-a08e-4bae-a8cc-d368c70f200d">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b13df1bd-f993-4725-9504-331b5e0e69d6">
+            <TableID>DimReseller</TableID>
+            <ColumnID>DimReseller_SCD_Status</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3e2bf71a-5aa5-4970-958e-138416ac44fe">
+      <ID>DimReseller SCD Start Date</ID>
+      <Name>DimReseller SCD Start Date</Name>
+      <Type>ScdStartDate</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9b0b0aa1-aa7c-4cec-8cea-73b6a42f952d">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1a6ad2aa-d1bf-45ef-8a02-aa61a42fb709">
+            <TableID>DimReseller</TableID>
+            <ColumnID>DimReseller_SCD_Start_Date</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1d5c74f0-2f01-44a7-b7de-dbc74e400577">
+      <ID>DimReseller SCD End Date</ID>
+      <Name>DimReseller SCD End Date</Name>
+      <Type>ScdEndDate</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c541d0a7-dad3-4ae8-b318-a6032d6f8cd4">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1205876b-6eb0-4154-80cb-e8db457b02ff">
+            <TableID>DimReseller</TableID>
+            <ColumnID>DimReseller_SCD_End_Date</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
